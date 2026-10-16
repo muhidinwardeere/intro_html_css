@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 470" role="img" aria-labelledby="title">
+  <title id="title">WarTech black logo</title>
+  <g id="wt-symbol" data-element="WT monogram" fill="#000000">
+    <path d="M56 70h56l49 126 52-126h51l52 126 32-82v-2h-39V70h115l-17 42h-34v65l-66 163h-48l-51-125-51 125h-48L56 70Zm64 42 45 143 22-54-35-89h-32Zm164 0 24 61v-61h-24Z"/>
+    <path d="M392 134h24v24h-24zM368 158h24v24h-24z"/>
+  </g>
+  <g id="wartech-wordmark" data-element="WARTECH wordmark" fill="#000000">
+    <text x="240" y="402" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="7">WARTECH</text>
+  </g>
+  <g id="wartech-tagline" data-element="WarTech tagline" fill="#000000">
+    <text x="240" y="448" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="5">WE BUILD WHAT’S NEXT.</text>
+  </g>
+</svg>
