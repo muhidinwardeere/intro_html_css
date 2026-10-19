@@ -1,132 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Forms</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<style>
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #9da7a7;
+        font-family: "Erica One", sans-serif;
+      }
+      form {
+        width: 28%;
+        border: 1px solid #086288;
+        padding: 16px;
+        margin: auto;
+      }
+      label {
+        color: #1b0111;
+      }
+      .full-width {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 12px;
+      }
+      button {
+        width: 100%;
+        border-color: #00ffff;
+        padding: 16px;
+        color: #a10e69;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- text, email, password, number, date, radio, checkbox, select, submit -->
+    <form>
+      <label for="names">Names</label>
 
-body{
-  background-color: #9da7a7;
-  font-family: "Erica One", sans-serif;
-}
-form{
-  width:28%;
-  border:1px solid #086288;
-  padding: 16px;
-  margin:auto;
-}
-label{
-  color:#1b0111;
+      <input
+        class="full-width"
+        type="text"
+        required
+        id="names"
+        name="full_name"
+        placeholder="Jane Doe"
+      />
 
-}
-.full-width{
-  width: 100%;
-  padding:10px;
-  box-sizing: border-box;
-  margin-bottom: 12px;
-}
-button{
-  width: 100%;
-  border-color: #00ffff;
-  padding:16px;
-  color:#a10e69;
-  border-radius: 10px;
-}
+      <br />
+      <label for="email">Email</label>
 
+      <input
+        class="full-width"
+        type="email"
+        required
+        id="email"
+        name="email"
+        placeholder="doe@example.com"
+      />
 
+      <br />
+      <label for="pass">Password</label>
 
-</style>
-</head>
-<body>
-<!-- text, email, password, number, date, radio, checkbox, select, submit -->
-<form>
+      <input
+        class="full-width"
+        type="password"
+        required
+        id="pass"
+        name="pass"
+        placeholder="*******"
+      />
 
-<label for="names">Names</label>
+      <br />
 
-<input class="full-width" type="text" required id="names" name="full_name" placeholder="Jane Doe">
+      <label for="weight">Weight</label>
 
-<br>
-<label for="email">Email</label>
+      <input
+        class="full-width"
+        type="number"
+        min="30"
+        max="250"
+        step="0.01"
+        required
+        id="weight"
+        name="weight"
+        placeholder="Weight in Kgs"
+      />
 
-<input class="full-width"  type="email" required id="email" name="email" placeholder="doe@example.com">
+      <br />
 
-<br>
-<label for="pass">Password</label>
+      <label for="dob">Date of Birth</label>
 
-<input class="full-width"  type="password" required id="pass" name="pass" placeholder="*******">
+      <input
+        class="full-width"
+        type="date"
+        min="1940-01-01"
+        max="2008-12-31"
+        required
+        id="dob"
+        name="dob"
+      />
 
-<br>
+      <!-- name must be the same for radio buttons -->
 
-<label for="weight">Weight</label>
+      <br />
+      <label>Select Your Gender</label>
+      <br />
+      <input type="radio" id="m" name="gender" value="F" />
 
-<input class="full-width"  type="number" min="30" max="250" step="0.01" required id="weight" name="weight"
+      <label for="m">Female</label>
 
-placeholder="Weight in Kgs">
+      <input type="radio" id="f" name="gender" value="M" />
 
-<br>
+      <label for="f">Male</label>
+      <hr />
+      <label>select your food</label>
+      <br />
+      <input type="checkbox" id="x" name="food" value="P001" />
 
-<label for="dob">Date of Birth</label>
+      <label for="x">Pizza</label>
 
-<input class="full-width"  type="date" min="1940-01-01" max="2008-12-31" required id="dob" name="dob">
+      <input type="checkbox" id="y" name="food" />
 
-<!-- name must be the same for radio buttons -->
+      <label for="y">Burger</label>
 
-<br>
-<label >Select Your Gender</label>
-<br>
-<input type="radio" id="m" name="gender" value="F">
+      <br />
 
-<label for="m">Female</label>
+      <input type="checkbox" id="z" name="food" />
 
+      <label for="z">Ugali</label>
 
-<input type="radio" id="f" name="gender" value="M">
+      <br />
 
-<label for="f">Male</label>
-<hr>
-<label>select your food</label>
-<br>
-<input type="checkbox" id="x" name="food" value="P001">
+      <select class="full-width">
+        <option>Select County</option>
 
-<label for="x">Pizza</label>
+        <option value="1">Mombasa</option>
 
+        <option value="2">Nairobi</option>
 
-<input type="checkbox" id="y" name="food">
+        <option value="3">Nyeri</option>
 
-<label for="y">Burger</label>
+        <option value="4">Kisumu</option>
 
-<br>
+        <option value="5">Kisii</option>
+      </select>
 
-<input type="checkbox" id="z" name="food">
+      <br />
 
-<label for="z">Ugali</label>
-
-<br>
-
-<select class="full-width" >
-
-<option >Select County</option>
-
-<option value="1">Mombasa</option>
-
-<option value="2">Nairobi</option>
-
-<option value="3">Nyeri</option>
-
-<option value="4">Kisumu</option>
-
-<option value="5">Kisii</option>
-
-</select>
-
-<br>
-
-<button>Register</button>
-</form>
-</body>
+      <button>Register</button>
+    </form>
+  </body>
 </html>
-
