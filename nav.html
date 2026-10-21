@@ -1,81 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navigation Bar</title>
-  <!-- top part is called nav 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <!-- top part is called nav 
    bottom part is called footer-->
-  <style>
-   @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-   *{
-    padding: 0;
-    margin: 0;
-   }
-    body{
-  font-family:"Cantarell", sans-serif;
-  font-optical-sizing: auto;
-  margin: 0;
-    }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: "Cantarell", sans-serif;
+        font-optical-sizing: auto;
+        margin: 0;
+      }
 
-nav{
-
-  display: flex;
-  justify-content: center;
-  /* background-color:antiquewhite; */
-  border-bottom: 1px solid rgb(104, 81, 81);
-}
-.content{
-  /* background-color: rgb(192, 115, 61); */
-  display: flex;
-  width: 70%;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo img{
-  width: 80px;
-  height: 80px;
-}
-.content ul{
-  display: flex;
-  /* remove bullets */
-  list-style-type: none;
-}
-.content li{
- 
-  margin-left: 16px;
-  margin-right: 16px;
-}
-.content a{
-  text-decoration: none;
-  color: black;
-  padding:  12px 14px;
-  text-transform: capitalize;
-}
-.content a:hover{
-  background-color: antiquewhite;
-  color: rgb(84, 64, 64);
-  /* text-decoration: underline; */
-  border-bottom: 1px solid black;
-}
-  </style>
-</head>
-<body>
-  <nav>
-    <div class="content">
-      <div class="logo"> 
-        <img src="images/wartech-logo-black.svg" alt="Logo">
+      nav {
+        display: flex;
+        justify-content: center;
+        /* background-color:antiquewhite; */
+        border-bottom: 1px solid rgb(104, 81, 81);
+      }
+      .content {
+        /* background-color: rgb(192, 115, 61); */
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo img {
+        width: 80px;
+        height: 80px;
+      }
+      .content ul {
+        display: flex;
+        /* remove bullets */
+        list-style-type: none;
+      }
+      .content li {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      .content a {
+        text-decoration: none;
+        color: black;
+        padding: 12px 14px;
+        text-transform: capitalize;
+      }
+      .content a:hover {
+        background-color: antiquewhite;
+        color: rgb(84, 64, 64);
+        /* text-decoration: underline; */
+        border-bottom: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="content">
+        <div class="logo">
+          <img src="images/wartech-logo-black.svg" alt="Logo" />
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Get Help</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Get Help</a></li>
-        <li><a href="#">Team</a></li>
-      </ul>
-    </div>
-  </nav>
- 
-</body>
+    </nav>
+  </body>
 </html>
