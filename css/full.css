@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* font-family: "IBM Plex Serif", serif; */
+
+:root {
+  --brand-green: #159957;
+  --brand-dark: #1f2d3d;
+  --soft-bg: #f4f8f7;
+}
+body {
+  font-family: "IBM Plex Serif", serif;
+  color: var(--brand-dark);
+}
+.navbar-brand {
+  color: var(--brand-green);
+  font-size: 1.4rem;
+}
+#goods {
+  color: var(--brand-dark);
+}
+.navbar-brand:hover {
+  color: #045a2f;
+}
+.nav-link {
+  color: #536171 !important;
+  font-weight: 900;
+}
+.nav-link.active {
+  color: var(--brand-green) !important;
+}
+.nav-link:hover {
+  color: var(--brand-green) !important;
+}
+.btn-success {
+  background: var(--brand-green);
+  border-color: var(--brand-green);
+  border-radius: 3px;
+  transition: all 1s;
+}
+.btn-success:hover {
+  background: #023a1e;
+  border-color: #023a1e;
+}
+
+.hero {
+  background: linear-gradient(to right, #d9ebe5, #edf3f1);
+}
+.hero .small-heading {
+  color: var(--brand-green);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+.card {
+  border: color #e5ece9;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: -200px -113px 186px 64px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -200px -113px 186px 64px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -200px -113px 186px 64px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.price {
+  color: var(--brand-green);
+  font-weight: 700;
+}
+
+.about-section {
+  background: var(--soft-bg);
+}
+
+.about-section i {
+  color: var(--brand-green);
+  font-size: 2.3rem;
+}
+
+footer {
+  background-color: #263342;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: var(--brand-green);
+}
+
+.copyright {
+  background-color: #151f2c;
+}
